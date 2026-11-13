@@ -18,12 +18,12 @@ jobs:
         run: python3 -m unittest -v
       - uses: dtolnay/rust-toolchain@b725eda525362e7cf34af9a7243cac1e3f01a7ec
         with:
-          toolchain: "1.91.0"
+          toolchain: "1.95.0"
       - name: Native build prerequisites
         run: sudo apt-get update && sudo apt-get install -y libusb-1.0-0-dev libudev-dev protobuf-compiler
       - name: Resolve and exercise dependencies
         run: |
-          cargo generate-lockfile
+          if ! test -f Cargo.lock; then cargo generate-lockfile; fi
           cargo check --locked
           rustc --version > evidence/toolchain.txt
       - name: Fetch and submit using unchanged Atlas Action
