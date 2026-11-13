@@ -1,0 +1,54 @@
+{
+  "repository": "pgm-testing/sbom-demo-cargo",
+  "action_revision": "ed68e4cc4c42a25a88a12f8ac26f520986851ec5",
+  "probes": [
+    {
+      "name": "obsrvr_radar",
+      "purl": "pkg:cargo/stellar-history-archive-hasher",
+      "version": "0.11.0",
+      "repo": "pkg:github/withObsrvr/rs-stellar-history-archive-hasher"
+    },
+    {
+      "name": "rust_soroban_client_library",
+      "purl": "pkg:cargo/soroban-client",
+      "version": "0.7.0",
+      "repo": "pkg:github/rahul-soshte/rs-soroban-client"
+    },
+    {
+      "name": "scaffold_stellar",
+      "purl": "pkg:cargo/stellar-scaffold-reporter",
+      "version": "0.1.4",
+      "repo": "pkg:github/stellar-scaffold/cli"
+    },
+    {
+      "name": "solidity_contracts_on_soroban",
+      "purl": "pkg:cargo/solang-parser",
+      "version": "0.3.5",
+      "repo": "pkg:github/hyperledger-solang/solang"
+    },
+    {
+      "name": "soroban_disassembler_(working_title)",
+      "purl": "pkg:cargo/soroban-ret",
+      "version": "0.0.4",
+      "repo": "pkg:github/Inferara/soroban-ret"
+    },
+    {
+      "name": "stellar_hardware_wallet_support",
+      "purl": "pkg:cargo/trezor-client",
+      "version": "0.1.6",
+      "repo": "pkg:github/trezor/trezor-firmware"
+    },
+    {
+      "name": "stellar_registry",
+      "purl": "pkg:cargo/stellar-registry",
+      "version": "0.1.4",
+      "repo": "pkg:github/stellar-registry/cli"
+    },
+    {
+      "name": "serde control",
+      "purl": "pkg:cargo/serde",
+      "version": "1.0.229",
+      "repo": null
+    }
+  ]
+}
